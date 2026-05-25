@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Arzafdigital | Partner Digital Marketing UMKM Indonesia</title>
+    <meta name="description" content="Arzafdigital adalah agency digital marketing terpercaya yang telah membantu lebih dari 10.000 UMKM di seluruh Indonesia untuk Go Digital dan Go Nasional.">
+    <meta name="keywords" content="digital marketing, agency digital indonesia, pemasaran UMKM, jasa website, iklan facebook, tiktok ads, AI marketing">
+    <meta name="author" content="Arzafdigital">
+    
+    <!-- Open Graph for Social Media Sharing -->
+    <meta property="og:title" content="Arzafdigital - Top Leader Digital Agency">
+    <meta property="og:description" content="Saatnya bisnis Anda naik level. Bersama Arzafdigital, kami siap membantu Anda Go Digital, Go Nasional.">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts & Tailwind CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#1E40AF', // blue-800
+                        secondary: '#3B82F6', // blue-500
+                        accent: '#F59E0B', // amber-500
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Scroll Reveal Swing Effect */
+        .reveal-hidden {
+            opacity: 0;
+            /* Memutar elemen ke belakang (3D) dan menurunkannya */
+            transform: perspective(1000px) translateY(50px) rotateX(-20deg);
+            transform-origin: bottom center;
+            /* Cubic-bezier memberikan efek pantulan/swing yang halus dan elegan */
+            transition: opacity 0.8s ease-out, transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            will-change: transform, opacity;
+        }
+        .reveal-active {
+            opacity: 1;
+            transform: perspective(1000px) translateY(0) rotateX(0);
+        }
+        
+        /* Stagger Delays (Membuat elemen muncul satu per satu berurutan) */
+        .stagger-1 { transition-delay: 100ms; }
+        .stagger-2 { transition-delay: 200ms; }
+        .stagger-3 { transition-delay: 300ms; }
+        .stagger-4 { transition-delay: 400ms; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased overflow-x-hidden">
+
+    <!-- Navbar -->
+    <nav class="bg-white/90 backdrop-blur-md fixed w-full z-50 top-0 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <div class="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center text-white font-bold text-xl">A</div>
+                    <span class="font-bold text-2xl text-gray-900 tracking-tight">Arzaf<span class="text-secondary">digital</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#tentang" class="text-gray-600 hover:text-primary font-medium transition-colors">Tentang Kami</a>
+                    <a href="#layanan" class="text-gray-600 hover:text-primary font-medium transition-colors">Layanan</a>
+                    <a href="#mengapa" class="text-gray-600 hover:text-primary font-medium transition-colors">Keunggulan</a>
+                </div>
+                <div class="hidden md:flex">
+                    <a href="#kontak" class="bg-primary hover:bg-blue-900 text-white px-6 py-2.5 rounded-full font-medium transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                        Konsultasi Gratis
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
+        <!-- Background Decoration -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
+            <div class="absolute -top-[20%] -right-[10%] w-[70%] h-[70%] rounded-full bg-blue-100/50 blur-3xl"></div>
+            <div class="absolute top-[40%] -left-[10%] w-[50%] h-[50%] rounded-full bg-indigo-100/50 blur-3xl"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative text-center">
+            <span class="inline-block py-1 px-3 rounded-full bg-blue-100 text-primary font-semibold text-sm mb-6 fade-in-up">
+                Top Leader Digital Agency Indonesia
+            </span>
+            <h1 class="text-4xl md:text-5xl lg:text-7xl font-extrabold text-gray-900 leading-tight mb-6 fade-in-up delay-100">
+                Transformasi Bisnis Anda <br class="hidden lg:block" />
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Era Digital Dimulai Di Sini</span>
+            </h1>
+            <p class="mt-4 text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-10 fade-in-up delay-200">
+                Mitra transformasi digital terpercaya bagi <strong>+10.000 UMKM</strong> di seluruh Indonesia. Kami memberdayakan bisnis lokal untuk bersaing dan menguasai pasar secara berkelanjutan.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 fade-in-up delay-300">
+                <a href="#kontak" class="bg-primary hover:bg-blue-900 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                    Mulai Go Digital Sekarang
+                </a>
+                <a href="#layanan" class="bg-white border-2 border-gray-200 hover:border-gray-300 text-gray-700 px-8 py-4 rounded-full font-semibold text-lg transition-all shadow-sm hover:shadow-md">
+                    Pelajari Layanan Kami
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang & Visi Misi Section -->
+    <section id="tentang" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <!-- Tentang Kami Text -->
+                <div class="reveal-hidden">
+                    <h2 class="text-primary font-bold tracking-wider uppercase text-sm mb-2">Tentang Arzafdigital</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Jembatan Menuju Ekosistem Digital Masa Depan</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Arzafdigital lahir dari semangat untuk memberdayakan pelaku usaha lokal agar mampu bersaing di era digital yang terus berkembang pesat. Kami bukan sekadar vendor, kami adalah <strong>partner pertumbuhan bisnis Anda</strong>.
+                    </p>
+                    
+                    <div class="bg-blue-50 border border-blue-100 rounded-2xl p-6 mb-6">
+                        <h4 class="font-bold text-xl text-gray-900 mb-2 flex items-center gap-2">
+                            <span class="text-2xl">🎯</span> Visi Kami
+                        </h4>
+                        <p class="text-gray-700">Menjadi Top Leader Digital Agency di Indonesia yang menginspirasi jutaan pelaku usaha untuk tumbuh, berkembang, dan menguasai pasar digital secara berkelanjutan.</p>
+                    </div>
+                </div>
+
+                <!-- Misi Cards -->
+                <div class="space-y-6">
+                    <h4 class="font-bold text-2xl text-gray-900 mb-4 flex items-center gap-2 reveal-hidden stagger-1">
+                        <span class="text-2xl">🚀</span> Misi Kami
+                    </h4>
+                    
+                    <div class="flex gap-4 items-start p-4 bg-white rounded-xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] border border-gray-50 transition-transform hover:-translate-y-1 reveal-hidden stagger-2">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-primary font-bold flex-shrink-0">1</div>
+                        <p class="text-gray-600 mt-2">Menghadirkan solusi digital yang terukur, inovatif, dan berdampak nyata bagi setiap pelaku UMKM Indonesia.</p>
+                    </div>
+                    
+                    <div class="flex gap-4 items-start p-4 bg-white rounded-xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] border border-gray-50 transition-transform hover:-translate-y-1 reveal-hidden stagger-3">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-primary font-bold flex-shrink-0">2</div>
+                        <p class="text-gray-600 mt-2">Memberikan layanan berkualitas tinggi dengan pendekatan profesional dan personal untuk setiap klien.</p>
+                    </div>
+
+                    <div class="flex gap-4 items-start p-4 bg-white rounded-xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] border border-gray-50 transition-transform hover:-translate-y-1 reveal-hidden stagger-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-primary font-bold flex-shrink-0">3</div>
+                        <p class="text-gray-600 mt-2">Menjadi jembatan antara pelaku usaha tradisional dengan ekosistem digital masa depan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Layanan Section -->
+    <section id="layanan" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal-hidden">
+                <h2 class="text-primary font-bold tracking-wider uppercase text-sm mb-2">Solusi End-to-End</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Layanan Unggulan Kami</h3>
+                <p class="text-gray-600">Rangkaian layanan lengkap yang dirancang khusus untuk mendorong pertumbuhan bisnis Anda secara menyeluruh.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group reveal-hidden stagger-1">
+                    <div class="text-5xl mb-6 transform group-hover:scale-110 transition-transform">🌐</div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Pembuatan Website</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">Website profesional yang mencerminkan identitas brand Anda di dunia maya.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group reveal-hidden stagger-2">
+                    <div class="text-5xl mb-6 transform group-hover:scale-110 transition-transform">🛒</div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Toko E-Commerce</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">Platform jual beli online siap pakai untuk skala UMKM hingga enterprise.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group reveal-hidden stagger-3">
+                    <div class="text-5xl mb-6 transform group-hover:scale-110 transition-transform">📣</div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Iklan Meta</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">Strategi iklan berbayar (Facebook & Instagram) yang tepat sasaran dan efisien.</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group reveal-hidden stagger-4">
+                    <div class="text-5xl mb-6 transform group-hover:scale-110 transition-transform">🎵</div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Iklan TikTok</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">Kampanye kreatif dan viral di platform video vertikal terbesar saat ini.</p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group reveal-hidden stagger-1">
+                    <div class="text-5xl mb-6 transform group-hover:scale-110 transition-transform">🤖</div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">AI Marketing</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">Solusi pemasaran cerdas berbasis kecerdasan buatan untuk hasil maksimal.</p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group reveal-hidden stagger-2">
+                    <div class="text-5xl mb-6 transform group-hover:scale-110 transition-transform">🛠️</div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">AI Tools</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">Implementasi tools AI canggih untuk efisiensi operasional bisnis Anda.</p>
+                </div>
+
+                <!-- Service 7 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group reveal-hidden stagger-3">
+                    <div class="text-5xl mb-6 transform group-hover:scale-110 transition-transform">🎨</div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Content Creation</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">Konten visual dan copywriting yang menarik perhatian serta berkonversi tinggi.</p>
+                </div>
+
+                <!-- Service 8 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group reveal-hidden stagger-4">
+                    <div class="text-5xl mb-6 transform group-hover:scale-110 transition-transform">🎓</div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Kelas Konsultasi</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">Bimbingan eksklusif langsung dari para praktisi digital marketing berpengalaman.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mengapa Kami Section -->
+    <section id="mengapa" class="py-20 bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="reveal-hidden">
+                    <h2 class="text-blue-200 font-bold tracking-wider uppercase text-sm mb-2">Mengapa Memilih Kami?</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold mb-6">Partner Setia Pertumbuhan Bisnis Anda</h3>
+                    <p class="text-blue-100 mb-8 text-lg italic border-l-4 border-secondary pl-4">
+                        "Kami bukan sekadar vendor — kami adalah partner pertumbuhan bisnis Anda."
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-secondary flex items-center justify-center flex-shrink-0">✓</div>
+                            <p class="font-medium"><strong>+10.000 UMKM</strong> telah mempercayakan bisnisnya</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-secondary flex items-center justify-center flex-shrink-0">✓</div>
+                            <p class="font-medium"><strong>Tim Berpengalaman & Bersertifikat</strong> di bidangnya</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-secondary flex items-center justify-center flex-shrink-0">✓</div>
+                            <p class="font-medium">Pendekatan <strong>Data-Driven</strong> untuk hasil yang terukur</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-secondary flex items-center justify-center flex-shrink-0">✓</div>
+                            <p class="font-medium">Solusi <strong>End-to-End</strong> dari strategi hingga eksekusi</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-secondary flex items-center justify-center flex-shrink-0">✓</div>
+                            <p class="font-medium"><strong>Dukungan Konsultasi Berkelanjutan</strong> pasca layanan</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative reveal-hidden stagger-2">
+                    <div class="absolute inset-0 bg-gradient-to-r from-secondary to-blue-400 transform skew-y-3 rounded-3xl -z-10"></div>
+                    <div class="bg-white text-gray-900 rounded-3xl p-8 md:p-12 shadow-2xl relative">
+                        <div class="text-center">
+                            <h4 class="text-2xl font-bold mb-2">Pencapaian Kami</h4>
+                            <p class="text-gray-500 mb-8">Bersama membangun ekonomi digital Indonesia</p>
+                            
+                            <div class="grid grid-cols-2 gap-6">
+                                <div class="p-4 bg-gray-50 rounded-xl">
+                                    <div class="text-4xl font-extrabold text-primary mb-1">10K+</div>
+                                    <div class="text-sm font-semibold text-gray-600">Klien UMKM</div>
+                                </div>
+                                <div class="p-4 bg-gray-50 rounded-xl">
+                                    <div class="text-4xl font-extrabold text-primary mb-1">100%</div>
+                                    <div class="text-sm font-semibold text-gray-600">Komitmen</div>
+                                </div>
+                                <div class="p-4 bg-gray-50 rounded-xl col-span-2">
+                                    <div class="text-3xl font-extrabold text-secondary mb-1">Go Digital, Go Nasional</div>
+                                    <div class="text-sm font-semibold text-gray-600">Target Kami Untuk Anda</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="kontak" class="py-24 bg-white text-center">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 reveal-hidden">
+            <h2 class="text-4xl font-extrabold text-gray-900 mb-6">Saatnya Bisnis Anda Naik Level</h2>
+            <p class="text-xl text-gray-600 mb-10">Tinggalkan cara lama. Mulai dominasi pasar digital Anda hari ini bersama Arzafdigital.</p>
+            <a href="mailto:halo@arzafdigital.com" class="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-primary to-secondary hover:from-blue-800 hover:to-blue-600 text-white px-10 py-5 rounded-full font-bold text-xl transition-all shadow-xl hover:shadow-2xl transform hover:-translate-y-1">
+                📩 Hubungi Kami Sekarang
+                <span class="text-sm font-normal block absolute -bottom-8 text-gray-500 w-full text-center left-0">*Dapatkan Konsultasi Pertama GRATIS!</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800 mt-10 reveal-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded flex items-center justify-center text-white font-bold">A</div>
+                    <span class="font-bold text-xl text-white tracking-tight">Arzafdigital</span>
+                </div>
+                <div class="text-sm text-center md:text-right">
+                    &copy; 2024 Arzafdigital. All rights reserved. <br>
+                    Mitra Transformasi Digital UMKM Indonesia.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Script untuk memicu Scroll Animasi (Intersection Observer) -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Konfigurasi observer (memicu saat elemen 15% masuk layar)
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15 
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Tambahkan kelas active untuk memulai animasi swing
+                        entry.target.classList.add('reveal-active');
+                        // Berhenti memantau elemen ini agar animasi hanya jalan 1x
+                        observer.unobserve(entry.target); 
+                    }
+                });
+            }, observerOptions);
+
+            // Pilih semua elemen yang punya kelas reveal-hidden
+            const revealElements = document.querySelectorAll('.reveal-hidden');
+            revealElements.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>
